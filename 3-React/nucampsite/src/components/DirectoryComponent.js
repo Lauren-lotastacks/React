@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 'reactstrap';
-
+import { CampsiteInfo } from 'DirectoryComponent'
 class Directory extends Component {
     constructor(props) {
         super(props);
@@ -47,10 +47,7 @@ class Directory extends Component {
                 <div className="row">
                     {directory}
                 </div>
-               
-                    
-                        
-                    
+               <CampsiteInfo  campsites={this.state.selectedCampsite }/>
                 </div>
             
         );
